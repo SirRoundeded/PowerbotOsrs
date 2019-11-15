@@ -15,7 +15,7 @@ import java.util.Arrays;
 /**
  * A Test for the antipatternWalker. Start it in Edgeville bank, it will follow a (long) testpath. (see "tile[] testPath" below)
  */
-@Script.Manifest(name="WalkingAround", description = "testing out the walker", properties = "author=me; topic=999; client=4;")
+@Script.Manifest(name="WalkingAround", description = "testing out the walker", properties = "topic=0; client=4;")
 
 public class ScriptTestingAntipatternWalker extends PollingScript<ClientContext> {
 
