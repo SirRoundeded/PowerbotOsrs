@@ -6,8 +6,6 @@ import org.powerbot.script.PollingScript;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Script.Manifest(name="FishAndCookInAlkharid", description = "", properties = "author=me; topic=999; client=4;")
-
 
 public class ScriptScheduler extends PollingScript<ClientContext> {
 
