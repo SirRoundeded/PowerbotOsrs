@@ -113,11 +113,8 @@ public class ScriptCookInAlkharid extends TaskbasedPollingScript<ClientContext>{
 
         for (Task task : taskList){
             if (task.activate() && !needToSetupTasksListAgain){
-                try {
+                
                     task.execute();
-                } catch (Exception e) {
-                    e.printStackTrace(); //will catch/ignore when changing food types
-                }
             }
         }
 
