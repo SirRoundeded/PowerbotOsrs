@@ -1228,11 +1228,8 @@ public class ScriptTestingAntipatternWalker extends PollingScript<ClientContext>
     public void poll() {
         for (Task task : taskList){
             if (task.activate()){
-                try {
+                
                     task.execute();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
         }
 
