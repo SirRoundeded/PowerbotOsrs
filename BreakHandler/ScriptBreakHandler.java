@@ -38,11 +38,9 @@ public class ScriptBreakHandler extends TaskbasedPollingScript<ClientContext> {
 
         for (Task task : taskList){
             if (task.activate()){
-                try {
+
                     task.execute();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+
             }
         }
     }
