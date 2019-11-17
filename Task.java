@@ -15,7 +15,7 @@ public abstract class Task<C extends ClientContext> extends ClientAccessor<C> {
     }
 
     public abstract boolean activate();
-    public abstract void execute() throws IOException;
+    public abstract void execute();
 
 
 }
