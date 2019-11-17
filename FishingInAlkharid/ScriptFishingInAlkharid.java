@@ -126,11 +126,8 @@ public class ScriptFishingInAlkharid extends TaskbasedPollingScript<ClientContex
 
         for (Task task : taskList){
             if (task.activate()){
-                try {
+
                     task.execute();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
         }
 
